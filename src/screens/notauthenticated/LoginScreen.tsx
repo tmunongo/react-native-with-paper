@@ -1,11 +1,10 @@
 import axios from "axios";
 import Constants from "expo-constants";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import {
   Dimensions,
   NativeSyntheticEvent,
   StyleSheet,
-  Text,
   TextInputChangeEventData,
   View,
 } from "react-native";
@@ -60,7 +59,6 @@ const LoginScreen = (props: Props) => {
 
   return (
     <View>
-      <Text>LoginScreen</Text>
       <View style={styles.loginForm}>
         <TextInput
           value={email}
